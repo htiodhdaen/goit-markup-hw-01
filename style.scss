@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 @font-face {
     font-family: Roboto;
@@ -12,6 +13,7 @@
 .body {
     max-width: 1600px;
     .header {
+        height: 80px;
         display: grid;
         grid-template: ". logo . nav . contacts .";
         grid-template-columns:
@@ -148,6 +150,7 @@
                     line-height: 16px;
                     letter-spacing: 0.03em;
                     color: #212121;
+                    display: block;
                     margin-bottom: 10px;
                 }
                 .text {
@@ -274,6 +277,7 @@
                 line-height: 24px;
                 letter-spacing: 0.03em;
                 color: rgba(255, 255, 255, 0.6);
+                text-decoration: none;
             }
         }
     }

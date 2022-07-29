@@ -1,6 +1,7 @@
 * {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  box-sizing: border-box; }
 
 @font-face {
   font-family: Roboto;
@@ -9,6 +10,7 @@
 .body {
   max-width: 1600px; }
   .body .header {
+    height: 80px;
     display: grid;
     grid-template: ". logo . nav . contacts .";
     grid-template-columns: minmax(10px, 215px) min-content minmax(10px, 93px) min-content minmax(20px, 344px) min-content minmax(10px, 215px);
@@ -113,6 +115,7 @@
       line-height: 16px;
       letter-spacing: 0.03em;
       color: #212121;
+      display: block;
       margin-bottom: 10px; }
     .body .main .features .feature-container .text {
       font-family: "Roboto";
@@ -214,4 +217,5 @@
         font-size: 14px;
         line-height: 24px;
         letter-spacing: 0.03em;
-        color: rgba(255, 255, 255, 0.6); }
+        color: rgba(255, 255, 255, 0.6);
+        text-decoration: none; }
